@@ -24,11 +24,7 @@ gulp.task('styles', () => (
 				rupture(),
 				autoprefixer()
 			],
-			'include css': true,
-			define: {
-				// dev-mode variable for using in stylus
-				'__DEV__': isDebug
-			}
+			'include css': true
 		}))
 		.pipe(gulpIf(!isDebug, gcmq()))
 		.pipe(gulpIf(!isDebug, nano({zindex: false})))

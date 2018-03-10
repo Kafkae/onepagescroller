@@ -1,0 +1,8 @@
+mixin header()
+	+b.header&attributes(attributes)
+		+e('ul').list
+			each data in [ "javascript:void(0);",  "javascript:void(0);",  "javascript:void(0);",  "javascript:void(0);"]
+				+e('li').item
+					+e('a').link._hover(href =data) Lorem, ipsum dolor.
+						//- +icon('ar')(width='16' height='16')
+			
