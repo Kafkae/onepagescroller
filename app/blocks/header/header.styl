@@ -1,15 +1,49 @@
 .header
-	display block
-	height 100vh
+	display flex
+	justify-content center
+	align-items center
 	background #31A290
+	height 100vh
 
-	&__list
-		padding 300px 50px
+	&__intro
+		display flex
+		flex-direction column
+		width 30%
+		align-items center
+		text-align center
+		font-size 1.7em
+		line-height 1.5
+		padding 10px
+	
+	&__title
 		font-size 2em
+		font-weight bold
 
-	&__item
-		padding 5px
+	
+	&__pres
+		border-radius 20%
+		max-width 100%
 
-	&__link
-		color mc
-		text-decoration none
+
+
+@media screen and (max-width 901px)
+	.header
+		flex-direction column
+
+		&__intro
+			width  70%
+
+		&__pres
+			max-width 40%
+
+@media screen and (max-width 831px)
+	.header
+		
+		&__intro
+			font-size 1.2em
+		
+		&__media
+			margin-left 30%
+		
+		&__pres
+			max-width 60%

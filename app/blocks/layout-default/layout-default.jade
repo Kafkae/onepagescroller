@@ -1,10 +1,12 @@
 include /../node_modules/bemto.jade/bemto
 include /../node_modules/jade-injected/jade-injected
+include ../icon/icon
 include ../page/page
 include ../fullpage/fullpage
-include ../header/header
 include ../logo/logo
+include ../header/header
 include ../scripts/scripts
+
 
 doctype html
 html(lang='ru')
@@ -12,6 +14,6 @@ html(lang='ru')
 	+page
 		+fullpage
 			+header
-				+logo
+		+logo
 				block content
 	+scripts(['app.min.js'])

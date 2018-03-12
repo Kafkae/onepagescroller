@@ -1,2 +1,44 @@
 .logo
 	display block
+	position absolute
+	top 20px
+	left 20px
+	width 62px
+	height 62px
+	border 4px solid #000
+	animation dinamiccolor  20s infinite ease-in-out
+
+	&__pug
+		position absolute
+		top 0px
+		bottom 0px
+		animation dinamicpug  20s infinite ease-in-out
+
+
+@keyframes dinamiccolor
+	0%
+		border-color #8E83B0
+
+	25%
+		border-color #8E83B0
+		top 20px
+		bottom 20px
+
+	50%
+		border-color #AA2F52
+
+	75%
+		border-color #E0754D
+
+@keyframes dinamicpug
+	0%
+		fill #8E83B0
+
+	25%
+		fill #8E83B0
+
+	50%
+		fill #AA2F52
+
+	75%
+		fill #E0754D

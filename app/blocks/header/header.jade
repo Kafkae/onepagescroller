@@ -1,8 +1,25 @@
 mixin header()
 	+b.header&attributes(attributes)
-		+e('ul').list
-			each data in [ "javascript:void(0);",  "javascript:void(0);",  "javascript:void(0);",  "javascript:void(0);"]
-				+e('li').item
-					+e('a').link._hover(href =data) Lorem, ipsum dolor.
-						//- +icon('ar')(width='16' height='16')
+		+e.intro
+			+e('h1').title PUUGS!!!
+			+e('p').description
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio vero adipisci ratione minus nesciunt maxime tempora molestias id esse.
+		+e.media
+			+e('img').pres(src='assets/images/pug1.jpg')
+		
 			
+			
+			
+			
+			
+			
+			
+			
+			
+			//- +e.intro
+			//- 	+e('h1').title PUUGS!!!
+			//- 	+e('p').description
+			//- 		| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio vero adipisci ratione minus nesciunt maxime tempora molestias id esse, ex blanditiis dolorum doloribus assumenda provident laborum eveniet quibusdam perspiciatis veritatis ipsum cum eligendi error ducimus beatae.
+			//- 	+e.read-more 
+			//- +e('img').pres(src='assets/images/pug1.jpg')
+				
