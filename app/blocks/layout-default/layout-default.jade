@@ -3,8 +3,14 @@ include /../node_modules/jade-injected/jade-injected
 include ../icon/icon
 include ../page/page
 include ../fullpage/fullpage
+include ../navigation/navigation
 include ../logo/logo
+include ../burger/burger
+include ../menu/menu
 include ../header/header
+include ../reads/reads
+include ../present-gallery/present-gallery
+include ../feedback/feedback
 include ../scripts/scripts
 
 
@@ -14,6 +20,12 @@ html(lang='ru')
 	+page
 		+fullpage
 			+header
+			+reads
+			+present-gallery
+			+feedback
+		+navigation
+		+menu
+		+burger
 		+logo
-				block content
+			block content
 	+scripts(['app.min.js'])

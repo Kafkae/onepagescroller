@@ -42,3 +42,22 @@ retinaBackground($image, $ext = 'png') {
 		background-image url('../images/' + $image + '@2x.' + $ext)
 	}
 }
+
+bounce()
+	@keyframes bounce
+		0%
+			opacity 0
+			transform scale(.3) translate3d(000)
+	
+		50%
+			opacity .9
+			transform scale(1.1)
+	
+		80%
+			opacity 1
+			transform scale(.89)
+	
+		100%
+			opacity 1
+			transform scale(1) translate3d(000)
+  
