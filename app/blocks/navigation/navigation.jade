@@ -1,3 +1,13 @@
 mixin navigation()
-	+b.navigation&attributes(attributes)
-		block
+	+b.navigation
+		+e('ul').panel
+			+e('li').elem(data-menuanchor="header")
+				+e('a').link(href='#header') header
+			+e('li').elem(data-menuanchor="read") 
+				+e('a').link(href='#read') read
+			+e('li').elem(data-menuanchor="show") 
+				+e('a').link(href='#show') show
+			+e('li').elem(data-menuanchor="subscribe") 
+				+e('a').link(href='#subscribe') subscribe
+
+

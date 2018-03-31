@@ -1,3 +1,5 @@
+include ../icon/icon
 mixin logo()
-	+b.logo&attributes(attributes)
-		block
+	+b.logo
+		+e('a').link(href='javascript:void(0)')
+			+icon('pug').pug(width='50px' height='65px')

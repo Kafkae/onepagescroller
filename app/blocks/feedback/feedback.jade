@@ -1,0 +1,10 @@
+mixin feedback()
+	+b.feedback.section(data-anchor="subscrube4")
+		+e.content
+			+e.bg
+			+e('h2').title 
+				| subscrube
+			+e('form').mail( action="google.com" method="post")
+				+e('input').field(placeholder="your e-mail..." type="email")
+				+e('button').confirm 
+					| subscrube

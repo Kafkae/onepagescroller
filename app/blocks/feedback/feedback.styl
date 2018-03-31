@@ -1,0 +1,134 @@
+.feedback
+	display flex
+	background linear-gradient(55deg, #A868B2, #4CDF4B, #b43f3f)
+	background-size 400% 400%
+	transition all 2s
+	animation button 20s ease infinite
+
+	&__content
+		margin 0 auto
+		display flex
+		justify-content space-around
+		flex-direction column
+		align-items center
+		width 60%
+		height 400px
+		position relative
+		z-index 99
+
+	&__bg
+		position absolute
+		top 0
+		bottom 0
+		right 0
+		left 0
+		width 100%
+		height 100%
+		filter blur(2px)
+		border-radius 90px
+		z-index -1
+		background-color #616673
+		opacity .2
+		
+
+
+	&__title
+		text-transform uppercase
+		font-size 3em
+		font-family sf
+
+	&__mail
+		height 60%
+		display flex
+		flex-direction column
+		align-items center
+		justify-content space-around
+	&__field
+		border none 
+		background none
+		text-transform uppercase
+		color #fff
+		background-color rgba(118 133 255 .2)
+		height 50%
+		width 300px
+		border-radius 50px
+		text-align center
+		font-size 1.8em
+		font-family mf
+		text-transform uppercase
+
+		&:hover
+			bounce()
+			animation .4s bounce
+
+		&:focus
+			border 3px solid #fff
+
+		&::placeholder
+			color #ffffff
+			font-family mf
+			font-size 1.6em
+
+	&__confirm
+		border none 
+		background none
+		text-transform uppercase
+		color #fff
+		background-color rgba(118 133 255 .2)
+		height 30%
+		width 300px
+		border-radius 50px
+		text-align center
+		font-size 2em
+		font-family mf
+		text-transform uppercase
+		&:hover
+			bounce()
+			animation .4s bounce
+@keyframes button 
+	from
+		background-position 50% 0%
+	50%
+		background-position 2% 100%
+	to
+		background-position 99% 0%
+
+@media screen and (max-width 608px)
+	.feedback
+
+		&__title
+			font-size 2em
+
+		&__field
+			height 30%
+			width 250px
+			font-size 1.3em
+
+		&__confirm
+			text-align center
+			height 25%
+			width 200px
+			font-size 2em
+@media screen and (max-width 436px)
+	.feedback
+
+		&__title
+			font-size 1.5em
+
+		&__field
+			height 20%
+			width 150px
+			font-size 1em
+
+		&__confirm
+			height 25%
+			width 150px
+			font-size 2em
+
+		&__content
+			height 300px
+
+	
+		
+
+

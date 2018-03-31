@@ -1,10 +1,18 @@
 include /../node_modules/bemto.jade/bemto
 include /../node_modules/jade-injected/jade-injected
+include ../icon/icon
 include ../page/page
 include ../fullpage/fullpage
-include ../header/header
+include ../navigation/navigation
 include ../logo/logo
+include ../burger/burger
+include ../menu/menu
+include ../header/header
+include ../reads/reads
+include ../present-gallery/present-gallery
+include ../feedback/feedback
 include ../scripts/scripts
+
 
 doctype html
 html(lang='ru')
@@ -12,6 +20,12 @@ html(lang='ru')
 	+page
 		+fullpage
 			+header
-				+logo
-				block content
+			+reads
+			+present-gallery
+			+feedback
+		+navigation
+		+menu
+		+burger
+		+logo
+			block content
 	+scripts(['app.min.js'])
