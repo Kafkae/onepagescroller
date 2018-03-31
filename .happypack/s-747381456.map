@@ -1,0 +1,1 @@
+{"version":3,"sources":["app\\blocks\\burger\\burger.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA","file":"burger.js","sourceRoot":"C:/Users/Aleksey/Desktop/onepage","sourcesContent":["// $(document).ready(function() {\r\n//     $(\".burger\").on(\"click\", function() {\r\n//         $(\".burger__line\").toggleClass(\"burger__line_active\");\r\n//     });\r\n// });"]}

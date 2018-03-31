@@ -1,0 +1,1 @@
+{"version":3,"sources":["app\\blocks\\page\\page.js"],"names":["WOW","init"],"mappings":";;AAAA,IAAIA,GAAJ,GAAUC,IAAV","file":"page.js","sourceRoot":"C:/Users/Aleksey/Desktop/onepage","sourcesContent":["new WOW().init();"]}

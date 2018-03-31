@@ -1,0 +1,9 @@
+'use strict';
+
+document.addEventListener("DOMContentLoaded", function () {
+	$('.preload').delay(1700).fadeOut('slow');
+
+	// $('.preloader-wrapper')
+	// 	.delay(1700)
+	// 	.fadeOut();
+});
